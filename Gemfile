@@ -18,6 +18,7 @@ gem 'rake'
 
 gem 'shotgun'
 gem 'hirb'
+gem 'rspec'
 
 group :test do
   gem 'shoulda-matchers'
@@ -25,7 +26,6 @@ group :test do
 end
 
 group :test, :development do
-  gem 'rspec'
   gem 'factory_girl'
   gem 'faker', github: 'stympy/faker'
 end
