@@ -1,0 +1,27 @@
+<link href='http://fonts.googleapis.com/css?family=Poiret+One|Shadows+Into+Light|Calligraffitti' rel='stylesheet' type='text/css'>
+
+<div class="title">
+  <h1> Take Note </h1>
+  <h3> Record Now, Reference Later. </h3>
+  <form action="/notes/new">
+    <input type="submit" value="New Note" />
+  </form>
+</div>
+
+<% @notes.each do |note| %>
+ 
+  <div class="notes">
+    <section id="edit">
+      <form action="/notes/<%= note.id %>/edit">
+        <input type="submit" value="Edit Note" />
+      </form>
+      <form action="/notes/<%= note.id %>/delete">
+        <input type="submit" value="Delete Note" />
+      </form>
+    </section>
+    <h2> <%= note.title %> </h2>
+    <%= note.created_at.strftime("%m/%d/%Y %H:%M") %> <br>
+    <%= note.content %>
+  </div>
+
+<% end %>

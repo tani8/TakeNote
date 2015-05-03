@@ -1,0 +1,9 @@
+ <p>
+  <em>Are you sure you want to delete this note? </em>
+  <%= @note.title %><br><%= @note.content %>
+</p>
+  <form action="/notes/<%= @note.id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="Yes, Delete It!">
+    <a href="/notes">Cancel</a>
+  </form>

@@ -1,0 +1,6 @@
+<form action="/notes/<%= @note.id %>" method="post" >
+  <input type="hidden" name="_method" value="put" />
+  <input type="text" name="title" value="<%= @note.title %>" /> 
+  <textarea name="content" value="<%= @note.content %>"> </textarea> <br>
+  <input type="submit" value="Note!" />
+</form>

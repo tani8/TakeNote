@@ -1,0 +1,30 @@
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+}
+
+th {
+  text-align: left;
+}
+
+.title{
+  font-family: 'Calligraffitti', cursive;
+  text-align: center;
+}
+.notes{
+  font-family: 'Poiret One', cursive;
+  border: solid 5px;
+  background-color: #FFC8AC;
+  margin: 3%;
+  padding: 2%;
+}
+#newnote {
+  text-align: center;
+}
+#edit{
+  font-size: 18px;
+  /*display: inline;*/
+  text-align: right;
+}

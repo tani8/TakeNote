@@ -1,0 +1,11 @@
+<section id="newnote">
+  
+  <form action="/notes" method="post">
+    Title:
+    <input type="text" name="title" value="<%= @note.title %>" /> 
+    Content: 
+    <textarea name="content" value="<%= @note.content %>"> </textarea> <br>
+    <input type="submit" value="Note!" />
+  </form>
+
+</section>
